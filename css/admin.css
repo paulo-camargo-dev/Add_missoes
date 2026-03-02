@@ -1,0 +1,81 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background:#e4cccc;
+    color:#fff;
+    margin:0;
+    padding:20px;
+}
+.menu-toggle{
+    color: #111;
+}
+.admin-login, .admin-panel{
+    max-width:1000px;
+    margin:auto;
+    background:#0786b1;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(0,255,150,.2);
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:none;
+}
+
+button{
+    padding:10px;
+    background:#00ff99;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.box{
+    margin-top:30px;
+}
+
+img{
+    max-width:150px;
+    display:none;
+    margin-top:10px;
+}
+.logout-btn{
+    background:#ff4444;
+    margin-bottom:20px;
+}
+
+.admin-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#222;
+    padding:10px;
+    margin:10px 0;
+    border-radius:8px;
+}
+
+.admin-item img{
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.admin-item button{
+    margin-left:auto;
+    background:#ff4444;
+}

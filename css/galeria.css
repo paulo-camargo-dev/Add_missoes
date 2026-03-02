@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fafafa;
+    margin:0;
+}
+
+/* GRID INSTAGRAM */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+/* WRAPPER IMAGEM */
+.imagem-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* IMAGEM */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+/* EFEITO INSTAGRAM ZOOM */
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* TÍTULO SOBREPOSTO */
+.card h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin:0;
+    padding: 12px;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0));
+    text-align: center;
+}
+
+/* CARD DESCRIÇÃO ABAIXO */
+.descricao-card {
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+/* LIGHTBOX ESTILO MODERNO */
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.95);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    animation: fadeIn .3s ease;
+}
+
+.lightbox img{
+    max-width:85%;
+    max-height:85%;
+    border-radius:15px;
+    animation: zoomIn .3s ease;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes zoomIn{
+    from{transform:scale(.8);}
+    to{transform:scale(1);}
+}

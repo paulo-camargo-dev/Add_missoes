@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Hero</title>
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div id="header"></div>
+
+<!-- Box de gerenciamento do Hero -->
+<div class="admin-panel box">
+    <h3>Gerenciar Hero</h3>
+<div> <h2>Painel de Publicações do Carrossel</h2>
+    <!-- Botão no canto direito -->
+     <button> <a href="admin.html">Admin</a></button>
+       </div>
+    <!-- Formulário para novo banner -->
+    <input type="text" id="tituloHero" placeholder="Texto do H1" required>
+    <input type="text" id="subtituloHero" placeholder="Texto do P" required>
+    <input type="file" id="imagemHero" accept="image/*" required>
+    <img id="previewHero">
+    <button onclick="salvarHero()">Adicionar Banner</button>
+
+    <!-- Lista de banners existentes -->
+    <div id="listaHeroAdmin"></div>
+</div>
+<br>
+<div class="admin-panel box">
+    <h3>Editar Seção "Quem Somos"</h3>
+
+    <input type="text" id="tituloSobre" placeholder="Título (H2)">
+    <textarea id="textoSobre" placeholder="Texto da seção"></textarea>
+    <button onclick="salvarSobre()">Salvar Alterações</button>
+</div>
+<br>
+<div id="footer"></div>
+
+<script src="js/include.js"></script>
+<script src="js/carregarHero.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

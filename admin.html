@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notícias</title>
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/noticias.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+
+    <!--include-->
+    <div id="header"></div>
+    <!--include-->
+    <br>
+<section class="admin-login" id="adminLogin">
+    <h2>Área Administrativa</h2>
+    <input type="password" id="senhaAdmin" placeholder="Digite a senha">
+    <button onclick="verificarSenha()">Entrar</button>
+</section>
+<br>
+<section class="admin-panel" id="adminPanel">
+
+    <h2>Painel de Publicações</h2>
+    <button class="logout-btn" onclick="logout()">Sair</button>
+    <!-- Botão no canto direito -->
+     <button> <a href="adminHome.html">Home</a></button>
+       
+
+
+    <!-- NOTÍCIAS -->
+    <div class="box">
+        <h3>Publicar Notícia</h3>
+        <input type="text" id="tituloNoticia" placeholder="Título">
+        <textarea id="conteudoNoticia" placeholder="Conteúdo"></textarea>
+        <input type="file" id="imagemNoticia" accept="image/*">
+        <img id="previewNoticia">
+        <button onclick="salvarNoticia()">Publicar Notícia</button>
+    </div>
+        <div class="box">
+        <h3>Gerenciar Notícias</h3>
+        <div id="listaNoticiasAdmin"></div>
+    </div>
+
+    <!-- GALERIA -->
+    <div class="box">
+        <h3>Publicar Foto na Galeria</h3>
+        <input type="text" id="tituloFoto" placeholder="Título da foto">
+        <textarea id="descricaoFoto" placeholder="Descrição da foto"></textarea>
+        <input type="file" id="imagemFoto">
+        <button onclick="salvarFoto()">Publicar</button>
+    </div>
+    <div class="box">
+    <h3>Gerenciar Fotos Publicadas</h3>
+    <div id="listaFotosAdmin"></div>
+</div>
+
+</section>
+<br>
+<div id="footer"></div>
+
+
+<script src="js/script.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/galeria.js"></script>
+<script src="js/include.js"></script>
+</body>
+</html>
+
+
+
+
+
+
