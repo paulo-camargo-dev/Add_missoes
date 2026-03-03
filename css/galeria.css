@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
     background: #fafafa;
@@ -96,4 +102,5 @@ body {
 @keyframes zoomIn{
     from{transform:scale(.8);}
     to{transform:scale(1);}
+
 }
