@@ -55,7 +55,7 @@ padding:0 20px;
 .hero-slide .hero-content {
     position: relative;
     z-index: 2; /* mantém o texto acima do overlay */
-    color: #111; /* cor do texto */
+    color: #000000; /* cor do texto */
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
@@ -206,4 +206,5 @@ font-size:22px;
     display: block;        /* mantém o card como bloco */
     text-decoration: none; /* remove sublinhado do link */
     color: inherit;        /* mantém a cor do texto */
+
 }
