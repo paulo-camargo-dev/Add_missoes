@@ -14,7 +14,20 @@
 .imagem-noticia{
     flex:1;
 }
+.btn-voltar {
+    background-color: #28a745; /* verde */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px; /* deixa redondo */
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
+.btn-verde:hover {
+    background-color: #218838; /* verde mais escuro */
+}
 .imagem-noticia img{
     width:100%;
     max-width:350px;
@@ -63,4 +76,5 @@
     .conteudo-noticia-individual h1{
         font-size:26px;
     }
+
 }
